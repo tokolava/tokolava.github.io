@@ -5,8 +5,8 @@ const f = document.getElementById('form');
 
       function submitted(event) {
         event.preventDefault();
-        const url = google + site + '+' + q.value;
-        const win = window.open(url, '_blank');
+        const url = site + '+' + q.value;
+        const win = location.replace(url, '_blank');
         win.focus();
       }
 
