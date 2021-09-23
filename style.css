@@ -54,3 +54,8 @@ form i {
   padding: 10px;
   font-size: 20px;
 }
+@media only screen and (max-width: 660px;){
+.header {
+display: block;
+}
+}
