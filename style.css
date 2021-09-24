@@ -32,12 +32,16 @@
 .sidebar a.active {
   background-color: #04AA6D;
   color: white;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
 }
 
 /* Links on mouse-over */
 .sidebar a:hover:not(.active) {
   background-color: #555;
   color: white;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
 }
 
 /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
