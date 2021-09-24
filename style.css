@@ -27,6 +27,9 @@
 .tombol {
   display: none;
 }
+.kl {
+display: inline-block;
+}
 /* Active/current link */
 .sidebar a.active {
   background-color: #4188f4;
