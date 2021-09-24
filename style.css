@@ -17,7 +17,9 @@
   height: 100%;
   overflow: auto;
 }
-
+.sidebar h2 {
+  padding: 1em;
+}
 /* Sidebar links */
 .sidebar a {
   display: block;
