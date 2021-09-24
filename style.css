@@ -5,57 +5,46 @@
   margin: 0 auto;
 }
 
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #fffff;
-  box-shadow: 0 2px 2px -2px black;
-  height: 4em;
-}
-.header .logo {
-  margin-left: 5em;
-  padding-bottom: 7px;
-}
-.header .search-bar {
-  margin-right: 5em;
-  display: flex;
-} 
-.section-1 {
-  display: inline-block;
-  
-}
-form {
-  background-color: white;
-  width: 50%;
-  height: 36px;
-  border-radius: 10px;
-  display: flex;
-  border:1px solid black;
-  flex-direction: row;
-  align-items: center;
-}
-input {
-  all: unset;
-  font: 16px system-ui;
-  color: black;
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+  position: fixed;
   height: 100%;
-  width: 100%;
-  padding: 6px 10px;
+  overflow: auto;
 }
-form i {
-  margin-left: 10px;
+
+/* Sidebar links */
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
 }
-::placeholder {
-  color: #00000;
-  opacity: 2; 
+
+/* Active/current link */
+.sidebar a.active {
+  background-color: #04AA6D;
+  color: white;
 }
-.belanja i {
-  padding: 10px;
-  font-size: 20px;
+
+/* Links on mouse-over */
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
 }
-@media only screen and (max-width: 660px;){
-.header {
-display: block;
+
+/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
 }
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 600px) {
+  .sidebar {
+    display: none;
+  }
 }
