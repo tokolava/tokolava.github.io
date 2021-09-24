@@ -12,7 +12,7 @@
   </head>
   <body>
     <div class="sidebar_toggle">
-      <button class="tombol" onclick="fungsiBar()"><span class="material-icons">menu</span></button>
+      <button id="tombol" class="tombol" onclick="fungsiBar()"><span class="material-icons">menu</span></button>
     </div>
     <div class="sidebar" id="sidebar">
       <h2>tokolava </h2>
@@ -22,14 +22,10 @@
       <a href="#about">About</a>
     </div>
     <script type="text/javascript">
-      function fungsiBar(){
-        var menu = document.getElementById("sidebar");
-        if (menu.style.display === "none"){
-          menu.style.display === "block";
-        }
-        else {
-          menu.style.display === "none";
-        }
+      document.getElementById("tombol").onclick = function() {myFunction()};
+      /* myFunction toggles between adding and removing the show class, which is used to hide and show the dropdown content */
+      function myFunction() {
+        document.getElementById("sidebar").classList.toggle("show");
       }
     </script>
   </body>
