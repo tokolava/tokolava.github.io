@@ -24,7 +24,9 @@
   padding: 16px;
   text-decoration: none;
 }
-
+.tombol {
+  display: none;
+}
 /* Active/current link */
 .sidebar a.active {
   background-color: #4188f4;
@@ -52,5 +54,8 @@ div.content {
 @media screen and (max-width: 600px) {
   .sidebar {
     display: none;
+  }
+  .tombol {
+    display: block;
   }
 }
