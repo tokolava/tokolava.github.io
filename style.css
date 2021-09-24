@@ -30,18 +30,18 @@
 
 /* Active/current link */
 .sidebar a.active {
-  background-color: #04AA6D;
-  color: white;
-  border-top-left-radius: 50px;
-  border-bottom-left-radius: 50px;
+  background-color: #3e70e6;
+  color: black;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
 }
 
 /* Links on mouse-over */
 .sidebar a:hover:not(.active) {
-  background-color: #555;
-  color: white;
-  border-top-left-radius: 50px;
-  border-bottom-left-radius: 50px;
+  background-color: #3e70e6;
+  color: black;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
 }
 
 /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
