@@ -11,12 +11,4 @@ const f = document.getElementById('form');
       }
 
       f.addEventListener('submit', submitted);
-      function sidebar(){
-        const tan = document.querySelector("sidebar");
-        if(tan.style.display("none"){
-            tan.style.display("block");
-      }
-        else {
-            tan.style.display("none");
-      }
-}
+      
