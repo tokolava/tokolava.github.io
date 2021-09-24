@@ -15,7 +15,10 @@
       <button id="tombol" class="tombol" onclick="fungsiBar()"><span class="material-icons">menu</span></button>
     </div>
     <div class="sidebar" id="sidebar">
-      <h2>tokolava </h2>
+      <div class="kl">
+        <h2>tokolava </h2>
+        <button id="tombol" class="tombol" onclick="tutupBar()"><span class="material-icons">close</span></button>
+      </div>
       <a class="active" href="#home">Home</a>
       <a href="#news">News</a>
       <a href="#contact">Contact</a>
@@ -24,6 +27,9 @@
     <script type="text/javascript">
       function fungsiBar(){
           document.getElementById("sidebar").style.display="block";
+      }
+      function closeBar(){
+          document.getElementById("sidebar").style.display="none";
       }
     </script>
   </body>
